@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100&display=swap');
+  *{
+    font-family: 'Work Sans', sans-serif !important; 
+    font-weight: bolder !important;
+  }
+.navbar{
+
+background-color: #7d222f !important;
+height: 60px;
+font-family: 'Lobster', sans-serif;
+/* font-family: 'Work Sans', sans-serif; */
+
+
+}
+
+.navbar-brand{
+color: #fff;
+}
+.btn-primary{
+    background-color: #7d222f !important;
+    font-family: 'Lobster', sans-serif !important;
+    /* border: none; */
+    
+}
+
+.btn-primary:hover{
+  background-color: #e9c0c0 !important;
+   
+       border:2px solid #7d222f !important;
+       color: #7d222f !important;
+       font-family: 'Lobster', sans-serif !important;
+       
+}
+.swal2-actions{
+    width: 100% !important;
+    
+    
+}
+.swal2-confirm{
+    background-color: #7d222f !important;
+    width: 90% !important;
+    border: none !important;
+    
+   
+}
+.swal2-confirm:hover{
+  background-color: #fff !important;
+   
+       border:2px solid #7d222f !important;
+       color: #7d222f !important;
+       font-family: 'Lobster', sans-serif !important;
+}
+.images-list {
+  justify-content: space-between;
+}
+.images-list-selected{
+  border: 2px solid #7d222f;
+  border-radius: 2px;
+}
+.images-list img{
+  width: 30px;
+  height: 30px;
+  /* border: 2px solid #7d222f;
+  border-radius: 5px; */
+}
+.mycard{
+
+  
+ 
+}
+.card-body{
+  font-family: 'Lobster', sans-serif !important; 
+  background-size: cover !important;
+ 
+}
+
+
+/* Responsive */
+
+
+@media only screen and (max-width : 600px){
+  .main{
+    padding: 10px 4px !important;
+  } 
+}
+#7d222f
+#e9c0c0

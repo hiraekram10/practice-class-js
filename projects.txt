@@ -1,0 +1,31 @@
+head tail
+calculator
+stop watch
+todo app
+login signup
+1. login signup responsive local storage authentication flow
+2. facebook news feeds(image, description like cooment share)
+quiz app(log in signup questionsscore result timmer)
+weather app
+olx app, daraz , amazon
+firebase dtabase
+
+
+Github
+git status 
+git init
+git add .
+user.name, user.emial
+git commit -m ""
+git remote add link"
+git push -u master
+
+cntrl panel -> credentials manager => windows => github.comm
+
+git  add . 
+git commit -m "done"
+git push
+
+
+firebase
+googlw own firebase

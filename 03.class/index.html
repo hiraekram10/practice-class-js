@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        h1 {
+            display: inline-block;
+            width: 100px;
+        }
+        button {
+            display: inline-block;
+            width: 90px;
+            margin-left: 7px;
+        }
+
+        #main {
+            width: 500px;
+            margin: 200px auto;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 
+    <div id="dabba"></div>
+    <button onclick="hello()">click me</button> -->
+
+    <!-- methods setInterval setTimeOut clearInterval clearTimeout 
+              ( INFINITE) , (TIMEGIVING 5SEC)  (STOP INTERVAL)   (STOP TIMEOUT)
+    
+    
+    -->
+    <div id="main">
+        <h1>Stop Watch</h1>
+
+        <div>
+            <h1 id="getminute">0</h1>
+            <h1 id="getsecond">0</h1>
+            <h1 id="getmilisec">0</h1>
+        </div>
+
+
+        
+        <button onclick="start()" id="start">start</button>
+        <button onclick="stop()" id="stop">stop</button>
+        <button onclick="reset()">reset</button>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

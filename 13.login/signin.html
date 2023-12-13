@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+            .main{
+            width: 30%;
+            height: 80vh;
+            /* border:2px solid  rgb(236, 236, 236) ; */
+            margin: 0 auto ;
+            display: flex;
+            flex-direction: column;
+        }
+        input{
+            width: 50%;
+            margin: 10px;
+            margin-left: 50px;
+            
+            
+            
+        }
+        .label{
+            margin: 10px;
+            margin-left: 20%;
+        }
+        button{
+            width: 20%;
+            color: rgb(255, 255, 255);
+            background-color: black;
+            border-radius: 5px;
+            margin-top: 8px;
+            margin-left: 90px;
+
+        }
+        h1{
+            text-align: center;
+
+    
+        }
+        button:hover{
+            background-color: azure;
+            color: black;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Sign in</h1>
+    
+<div class="main">
+
+
+<label for="sEmail" class="label">Enter your Email</label>
+<input type="text" name="" id="lEmail">
+
+
+
+<label for="sPass" class="label">Enter your name</label>
+<input type="text" name="" id="lPass">
+<button onclick="signin()">sign in</button>
+</div>
+
+    <script src="index.js"></script>
+</body>
+</html>

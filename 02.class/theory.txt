@@ -1,0 +1,11 @@
+switch statemnt:
+    - chain of conditional statement
+    - one variable check with different values.
+    - === value match
+
+
+    EVENTS:
+    HTML events are "things" that happen to HTML elements.
+     When JavaScript is used in HTML pages, JavaScript can "react" on these events.
+     onClick to check user activity
+     link needs href attribute

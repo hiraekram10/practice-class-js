@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+
+.navbar {
+    background-color: rgb(164, 164, 214) !important;
+    width: 100% !important;
+    font-family: 'Dancing Script', cursive;
+
+
+}
+
+.navbar-brand {
+    color: white;
+    font-weight: bolder !important;
+    text-shadow: 2px 1px rgb(14, 0, 104) !important;
+    text-decoration-line: underline;
+}
+
+.navbar-brand:hover {
+    color: white;
+    font-weight: bolder !important;
+    text-shadow: 2px 1px rgb(14, 0, 104) !important;
+    text-decoration-line: underline
+}
+
+label {
+    font-size: 20px;
+    font-family: 'Lucida Sans', ;
+}
+
+.text {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular';
+    font-size: 20px;
+}
+
+.btn {
+    width: 100px !important;
+    height: 34px !important;
+    border: none;
+    background-color: rgb(164, 164, 214) !important;
+    color: white;
+    font-family: 'Dancing Script', cursive;
+}
+
+.time-text {
+    font-size: 15px;
+    font-family: 'Dancing Script', cursive;
+    font-weight: bolder !important ;
+}
+
+.btn:hover {
+    background-color: rgb(213, 205, 250) !important;
+
+}
+
+
+@media only screen and (max-width:650px) {
+
+    
+    label {
+        font-size: 12px;
+        
+    }
+    .text {
+       
+        font-size: 15px;
+    }
+}
