@@ -215,7 +215,104 @@ console.log(practice2); //hira
 
 
 // destructuring for array 
-let arr = 
+// let arr = ["i", "love","coding"]
+// let[a,b,c]=arr
+// console.log(arr);
+
+
+// quiz check
+// var fri ="john apples are"
+// var re = fri.slice(5,10)// apple  1 exclude
+// console.log(re);
+
+
+
+
+// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>.array methods >>>>>>>>>>>>>>>>>>>>>>>>.......
+
+// let arr = ["hira",6,"smit"]
+// for(var i = 0;i<arr.length ;i++){
+//     console.log(arr[i]);
+// }
+
+// replace with forEach
+// The forEach() method calls a function for each element in an array
+// let arr = ["hira",6,"smit"]
+
+//                       //optional
+// arr.forEach(function(bb,index){
+//   console.log(bb,index);
+// })
+
+
+
+// checking return value of for each
+//  var testing = arr.forEach(function(bb,index){
+//       console.log(bb,index);
+//     })
+// console.log(testing); //undefined it doesnt return anything
+
+// map  map() creates a new array from calling a function for every array element. 
+// map() does not execute the function for empty elements.
+// let arr = ["hira",6,"smit"]
+
+// arr.map(function (v,i){
+//  console.log(v,i);
+
+// })
+
+
+// checking 
+// let arr = ["hira",6,"smit"]
+
+// let resu = arr.map(function (v,i){
+// //  console.log(v,i);z
+// //  return "elphabate"
+// return `${v} saylani`
+
+// })
+// console.log(resu); //['elphabate', 'elphabate', 'elphabate']
+// console.log(resu);// ['hira saylani', '6 saylani', 'smit saylani']
+
+
+
+// filter
+// its just return tru or false
+
+// let arr = ['hira',9,"green","blue"]
+
+// let test = arr.filter(function(v,i){
+//     console.log(v,i);
+//     return true
+// })
+// console.log(test); // if true push values in new array
+
+
+
+// let arr = ['hira',9,"green","blue"]
+
+// let test = arr.filter(function(v,i){
+//     console.log(v,i);
+//     return false
+// })
+// console.log(test); // []
+
+
+// let arr = ['hira',9,"green","blue"]
+
+// let test = arr.filter(function(v,i){
+//     console.log(v,i);
+//     return  typeof v === "number"
+// })
+// console.log(test); // 9
+
+// use for filtertrate data
+
+
+
+
+
+
 
 
 
