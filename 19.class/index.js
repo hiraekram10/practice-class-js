@@ -78,7 +78,7 @@
 // console.log(merge);
 
 
-// working of spread operator
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>. working of spread operator
 function arrUp (arr){
    arr[1].name = "haya";
    return arr
@@ -165,6 +165,57 @@ console.log(practice2); //hira
 // Nested objects mean objects that contain non-primitive values.
 
 // For instance: [“laptop”, {value: 5000}]
+
+
+// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> destructuring>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+// Destructuring is a JavaScript expression that allows us to extract 
+// data from arrays, objects, and maps and set them into new,
+//  distinct variables. Destructuring allows us to extract multiple properties, or items, from an array​ at a time.
+
+
+
+// var city ={
+//     name:"karachi",
+//     capital:"islamabad",
+//     province:"4"
+
+// }
+
+// console.log(city.name,city.province,city.capital);   //more words of code to prevent this
+
+
+// let city ={
+//     name:"karachi",
+//     capital:"islamabad",
+//     province:"4"
+
+// }
+
+// let {name,province,capital} = city
+
+// console.log(name,capital,province);  //solved
+
+
+// nested
+
+// let city ={
+//     name:"karachi",
+//     capital:"islamabad",
+//     province:"4",
+//     water:{see:'seaview'}
+
+// }
+
+// let {name,province,capital,water} = city
+
+// let {see} = water
+
+// console.log(name,capital,province,see);  //solved
+
+
+
+// destructuring for array 
+let arr = 
 
 
 
