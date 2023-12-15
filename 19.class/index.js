@@ -79,23 +79,23 @@
 
 
 //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>. working of spread operator
-function arrUp (arr){
-   arr[1].name = "haya";
-   return arr
-}
+// function arrUp (arr){
+//    arr[1].name = "haya";
+//    return arr
+// }
 
-let obj= {
-    name:"hira"
-}
-let result = arrUp([obj,obj,obj])   // haya, haya. haya (bcz refrence didff)  obect or array always save byy refrence not by value when we update object it also update its refrence
-console.log(result);
+// let obj= {
+//     name:"hira"
+// }
+// let result = arrUp([obj,obj,obj])   // haya, haya. haya (bcz refrence didff)  obect or array always save byy refrence not by value when we update object it also update its refrence
+// console.log(result);
 
 
 
-let obj1 = {name:"saima"}
-let obj2 = obj1
-console.log(obj1);   //saima
-console.log(obj2);  //saima
+// let obj1 = {name:"saima"}
+// let obj2 = obj1
+// console.log(obj1);   //saima
+// console.log(obj2);  //saima
 
 // to prevent this we used spread operator
 
@@ -138,19 +138,19 @@ console.log(obj2);  //saima
 
 // practice
 
-var practice = {
-    email :"hira@gmail.com",
-    pass:'iiiii'
-}
+// var practice = {
+//     email :"hira@gmail.com",
+//     pass:'iiiii'
+// }
 
-var practice2 = {
-    ...practice  //this is called shallow copy of object
-}
+// var practice2 = {
+//     ...practice  //this is called shallow copy of object
+// }
 
 
-practice.email ="hera@gail.com"
-console.log(practice);  //hera@gmail.com
-console.log(practice2); //hira
+// practice.email ="hera@gail.com"
+// console.log(practice);  //hera@gmail.com
+// console.log(practice2); //hira
 
 
 // We have two kinds of object copies in JavaScript: shallow and deep.
@@ -307,6 +307,60 @@ console.log(practice2); //hira
 // console.log(test); // 9
 
 // use for filtertrate data
+
+
+// var arr = ['hira','rida',"haya","bisma","rafay"]
+
+// var test = arr.filter(function(v,i){
+//     console.log(v,i);
+//     return v.length === 4
+
+// })
+
+// console.log(test);//hira,haya,rida
+
+
+// var arr = ['hira','rida',"haya","bisma","rafay"]
+
+// var test = arr.some(function(v,i){   //every or some doing same work
+//     console.log(v,i);
+//     // return v.length === 3
+//     return v === "haya"
+
+// })
+
+// console.log(test)// false  bcz itis used to check or find 
+// console.log(test)  //true
+
+
+
+// sort...   it updates old array
+
+// var arr = [9,3,6,7,9,2,1,5]
+// let soring = arr.sort()
+// console.log(soring);   //1,2,3,6,7,9,9
+
+// var arr = ["rida","samia","nabila","ayaz"]
+// let soring = arr.sort()
+// console.log(soring);  //ayaz,nabia,samia,rida
+
+
+
+// var arr = [9,3,6,7,9,2,1,5]
+// let reducing = arr.reduce(function(a,b){
+//     console.log(a,b);
+// })
+
+
+var arr = [9,3,6,7,9,2,1,5]
+let reducing = arr.reverse()
+console.log(reducing);
+
+
+
+
+
+
 
 
 
