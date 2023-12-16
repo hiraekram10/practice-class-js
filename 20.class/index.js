@@ -73,11 +73,48 @@
 // Use the keyword class to create a class. Always add a constructor() method.
 // Classes are a template for creating objects. They encapsulate data with code to work on that data
 
-class Students {
+// class Students {
+//     constructor(name,email){
+//         this.fname = name,
+//         this.email= email
+//     }
+// }
+// let  student =new Students ("hira ekram","hi")
+// console.log(student);
+
+// class Students {
+//     constructor(name,email){
+//         this.fname = name,
+//         this.email= email
+//     }
+//     getname(){   //by default move to  prototype  BCZ WE DONT WANT MORE COPIES 
+//         return this.fname
+//     }
+// }
+// let  student =new Students ("hirA","hi")
+// console.log(student.getname());  //Hira
+
+
+class School {
+    constructor(){
+        this.schoolName ="saylani"
+    }
+}
+
+// oop
+//(inheritance data of parent class take from child class)
+
+
+
+class Students extends School {
     constructor(name,email){
+        super()  //School data in this
         this.fname = name,
         this.email= email
     }
+   
 }
-let  student =new Students ("hira ekram","hi")
-console.log(student);
+let student = new Students ("hira","hira@gmail.com")
+
+console.log();
+
