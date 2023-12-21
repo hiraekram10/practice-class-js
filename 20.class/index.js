@@ -105,16 +105,26 @@ class School {
 //(inheritance data of parent class take from child class)
 
 
-
-class Students extends School {
-    constructor(name,email){
-        super()  //School data in this
-        this.fname = name,
-        this.email= email
-    }
+// class School {
+//     constructor(schoolName){
+//         this.schoolName = schoolName;
+//     }
+// }
+// class Students extends School {
+//     constructor(schoolName,name,email){
+//         super(schoolName)  //School data in this
+//         this.fname = name;
+//         this.email= email;
+//     }
    
-}
-let student = new Students ("hira","hira@gmail.com")
+// }
+// let student = new Students("smit","hira","hira@gmail.com")
 
-console.log();
+// console.log(student);
+
+// OOPS four concept 
+// -Encapsulation( all calculations in one class)
+// -abstraction (all work hidden from users)
+// INHERITANCE ( parent data taken by child)
+// -PoLimorphism (multiple work (sum multiply))
 
