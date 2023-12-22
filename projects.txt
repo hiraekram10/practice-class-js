@@ -27,5 +27,8 @@ git commit -m "done"
 git push
 
 
+
+justify contn between similar spaace in between no spaces at corners
+
 firebase
 googlw own firebase

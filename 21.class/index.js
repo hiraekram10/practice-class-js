@@ -15,11 +15,37 @@ console.log(abcc);  //not provided
 // a closure gives you access to an outer function's scope from an inner function.
 
 
-function one(){
-    let institute = "smit"
-    function two(){
-        console.log(institute);
-    }
-    two()
-}
+// function one(){
+//     let institute = "smit"
+//     function two(){
+//         console.log(institute);
+//     }
+//     two()
+// }
 // execution context
+
+
+// recursion function :same funcion call  inside the same function
+// let count = 0;
+// function loop (){
+//     console.log(count);
+// if(count < 10){
+//     count++
+//     loop()
+   
+// }
+// }
+// loop()
+
+
+// object function another way  thisis called factory function 
+// function car (name,model){
+//     return{
+//         name:name,
+//         model:model
+//     }
+// }
+// console.log(car("cultus",2021));
+
+
+

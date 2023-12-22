@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+
+
+    <!-- navbar  -->
+    <nav class="navbar bg-info">
+        <div class="container-fluid">
+            <a class="navbar-brand">BBC news</a>
+            <div class="d-flex">
+                <input class="form-control me-2" type="search" id="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-light" onclick="newsSearch()" type="submit">Search</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- cards -->
+    <div style="display: none;" id="content">
+        <div id="news" style="display: none;" class="d-flex flex-wrap justify-content-around my-4">
+
+
+        </div>
+        <div class="d-grid gap-2">
+            <button onclick="loadMore()" class="btn btn-info" type="button">load more...</button>
+
+        </div>
+    </div>
+    <div id="loader" class="loader">
+        <div class="spinner-border text-info" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- js links -->
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment-with-locales.min.js"
+        integrity="sha512-42PE0rd+wZ2hNXftlM78BSehIGzezNeQuzihiBCvUEB3CVxHvsShF86wBWwQORNxNINlBPuq7rG4WWhNiTVHFg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</body>
+
+</html>

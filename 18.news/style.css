@@ -1,0 +1,20 @@
+.news-image{
+width: 100%;
+height: 200px;
+object-fit: cover;
+}
+.loader{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loader > div{
+width: 100px;
+height: 100px;
+}
+.navbar-brand{
+  color: white !important;
+  
+}
