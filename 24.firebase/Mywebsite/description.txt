@@ -1,1 +1,2 @@
 events doesnt work in module type
+firebase project always run on live server
