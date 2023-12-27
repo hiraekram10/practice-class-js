@@ -13,6 +13,7 @@ let login = ()=>{
     console.log("user","login");
     email.value= ''
     password.value = ''
+    location.href= './profile.html'
   })
   .catch((error) => {
     const errorCode = error.code;
