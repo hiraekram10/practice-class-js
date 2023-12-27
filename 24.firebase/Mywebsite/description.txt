@@ -1,0 +1,1 @@
+events doesnt work in module type

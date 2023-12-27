@@ -31,4 +31,24 @@ git push
 justify contn between similar spaace in between no spaces at corners
 
 firebase
-googlw own firebase
+google own firebase
+Firebase hosting through cli
+(npm install -g firebase-toolsnpm install -g firebase-tools)
+npm install -g firebase-tools
+firebase login
+firebase init
+
+
+open terminal
+firsttime = firebase login
+firebase init
+y
+hosting configure just firebase enter
+use an existing file
+use an existing project & select project
+public = name your folder
+singlePage n
+n
+n
+firebase deploy
+for updating add firebase deploy
