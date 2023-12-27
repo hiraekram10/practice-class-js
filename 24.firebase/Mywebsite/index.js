@@ -1,5 +1,5 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
-import { getAuth } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
+import { getAuth,signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
 
  // Your web app's Firebase configuration
   // For Firebase JS SDK v7.20.0 and later, measurementId is optional
@@ -25,7 +25,39 @@ let register = ()=>{
     const email = document.getElementById('email')
     const password = document.getElementById('password')
 
-    console.log('test',email.value,password.value)
+    // console.log('test',email.value,password.value)
+
+//     createUserWithEmailAndPassword(auth, email.value, password.value)
+//   .then((userCredential) => {
+//     // Signed up 
+//     const user = userCredential.user;
+//    console.log('user=> ',user);
+//   })
+//   .catch((error) => {
+//     const errorCode = error.code;
+//     const errorMessage = error.message;
+//     console.log('error',errorCode,errorMessage);
+//   });
+
+
+
+signInWithEmailAndPassword(auth, email.value, password.value)
+  .then((userCredential) => {
+    // Signed in 
+    const user = userCredential.user;
+    console.log("user","login");
+  })
+  .catch((error) => {
+    const errorCode = error.code;
+    const errorMessage = error.message;
+    console.log(errorMessage);
+  });
+
+
+
+
+
+
 }
 // window.register = register;
 
