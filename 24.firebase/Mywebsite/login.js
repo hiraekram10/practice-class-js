@@ -1,6 +1,6 @@
 import { auth, signInWithEmailAndPassword } from "./firebase.js";
 
-
+// signup login
 let login = ()=>{
     const email = document.getElementById('email')
     const password = document.getElementById('password')
@@ -21,6 +21,8 @@ let login = ()=>{
     console.log(errorMessage);
   });
   }
+
+  
   
   let loginBtn = document.getElementById('loginBtn');
   loginBtn.addEventListener('click',login)
