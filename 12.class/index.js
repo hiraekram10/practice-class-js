@@ -145,39 +145,61 @@
 // }
 
 
-practice
-var kingdomAnimalia = {
-    vertebrates:{
-        warmblooded:{
-            mamals:{
-                names:['Cow ', 'Goat','horse'],
-                colro:'brown',
-                legs: "four",
-                feed:"Grass"
-            }
-        }
-    },
-    invertebrates:{
-        coldblooded:{
-           Fishes:{
-                names:['starFish ', 'RoutFish','greenFish'],
-                colro:'grey',
-                legs: "no legs",
-                feed:"meat"
-            }
-        }
-    }
+// practice
+// var kingdomAnimalia = {
+//     vertebrates:{
+//         warmblooded:{
+//             mamals:{
+//                 names:['Cow ', 'Goat','horse'],
+//                 colro:'brown',
+//                 legs: "four",
+//                 feed:"Grass"
+//             }
+//         }
+//     },
+//     invertebrates:{
+//         coldblooded:{
+//            Fishes:{
+//                 names:['starFish ', 'RoutFish','greenFish'],
+//                 colro:'grey',
+//                 legs: "no legs",
+//                 feed:"meat"
+//             }
+//         }
+//     }
 
+// }
+
+
+//  for( var species in kingdomAnimalia){
+//     // console.log(species);
+//     for(var animals in kingdomAnimalia[species]){
+//         // console.log(animals);
+//         for(var habitat in kingdomAnimalia[species][animals]){
+//             // console.log(habitat);
+//             console.log(kingdomAnimalia[species][animals][habitat].legs);
+//         }
+//     }
+//  }
+
+// function Students (name,email){
+// this.name = name;
+// this.email = email
+// this.getname = ()=>{
+//     return  this.name
+// }
+// }
+
+
+// const student = new Students('hira',"hira@gmail.com")
+// console.log(student.getname());
+
+
+var obj = {
+    name:"hira",
+    fatherName:"Ekram"
 }
-
-
- for( var species in kingdomAnimalia){
-    // console.log(species);
-    for(var animals in kingdomAnimalia[species]){
-        // console.log(animals);
-        for(var habitat in kingdomAnimalia[species][animals]){
-            // console.log(habitat);
-            console.log(kingdomAnimalia[species][animals][habitat].legs);
-        }
-    }
- }
+// console.log(Object.keys(obj));
+var updated = Object.keys(obj)
+console.log(updated["name"]);
+// console.log(obj['fatherName']);
