@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            
+        }
+        .card{
+            height: 300px;
+            width: 350px;
+            background-color: aqua;
+            border-radius: 10px;
+            padding: 5px;
+            margin:5px;
+        }
+    </style>
+</head>
+<body>
+    <!-- <h1>Constructor</h1> -->
+    <!-- <input type="text" name="" id="name">
+    <button onclick="addName()">click</button> -->
+
+
+
+    <h1>Create Post</h1>
+    <input type="text" name="" id="title" placeholder="title" size="30">
+    <br>
+    <br>
+    <textarea name="description" id="description" cols="30" rows="10" placeholder="write your comments"></textarea>
+
+    <br>
+    <button onclick="addPost()">Post</button>
+
+            <h1>Posts</h1>
+  <div class="main" id="main">
+    <!-- <div class="card">
+        <h1>Ttile</h1>
+        <p>description</p>
+    </div> -->
+</div>
+
+    
+
+   
+    
+
+
+    <script>
+        // var students={
+        //     name:"hira",
+        //     email:"hera112@gmail.com",
+        //     getdetails : function(){
+        //         return this.name + " " +students.email
+        //     }
+        // }
+
+        // // var student = students.getdetails
+        // // console.log(student());
+
+
+        // var student = students.getdetails()
+        // console.log(student);
+
+
+    //     var students={
+    //         name:"hira",
+    //         email:"hera112@gmail.com",
+           
+        
+    //     }
+    //     console.log(Object.keys(students));
+    //     console.log(Object.entries(students));
+
+    // var keys = Object.keys(students)
+    // for(var i = 0; i < keys.length;i++){
+    //     console.log(students[keys[i]]);
+    // }
+
+   
+
+        
+
+
+
+
+
+
+
+
+
+        // constructor
+        // var employee =[
+        //     {name:"hira"},
+        //     {name:"rida"}
+        // ]
+
+    //     function Emloyee(a,b){
+    //  this.Fname=a;
+    //  this.Lname=b;
+    //     }
+
+
+    //     var employes = new Emloyee('hira',"ekram");
+    //     console.log(employes);
+
+
+// function addName(){
+//     var name = document.getElementById('name')
+//     var previousData = localStorage.getItem('employes')
+//     // console.log(previousData);
+//     var arr = JSON.parse(previousData)
+//     // console.log(parseData);
+//     if(!arr){
+//         arr = []
+//     }
+    
+//     // var arr = []
+
+//     var employes = {
+//         name :name.value
+//     }
+//     console.log(employes);
+//     arr.push(employes)
+//     localStorage.setItem('employes',JSON.stringify(arr))
+
+// }
+var main = document.getElementById('main')
+
+  function addPost (){
+    var title = document.getElementById('title')
+    var description = document.getElementById('description');
+    var previousData = localStorage.getItem('userPost')
+    // console.log(previousData); //data in strings
+    var arr = JSON.parse(previousData)
+    // console.log(parseData); [{...}]
+    // var arr = []
+    if(!arr){
+        arr = []
+    }
+    var posts = {
+        title:title.value,
+        description:description.value
+    }
+    arr.push(posts)
+      localStorage.setItem("userPost",JSON.stringify(arr))
+      title.value = ''
+      description.value = ''
+    main.innerHTML +=` <div class="card">
+        <h1>${posts.title}</h1>
+        <p>${posts.description}</p>
+    </div>`
+  }
+
+    </script>
+</body>
+</html>
