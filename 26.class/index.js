@@ -1,6 +1,5 @@
 
 
-
 function addUser (){
     
   var name = document.getElementById('name')
@@ -8,13 +7,8 @@ function addUser (){
   var Pno = document.getElementById('number')
   var password = document.getElementById('password')
   var cpassword = document.getElementById('cpassword')
-   var userData= {
-    name:name.value,
-    email:email.value,
-    Pno:Pno.value,
-    password:password.value,
-    cpassword:cpassword.value
-   }
+  
+  
    if(name.value == ''){
     Swal.fire({
         icon: "error",
@@ -63,7 +57,19 @@ function addUser (){
        
       });
    }
+   var userData= {
+    name:name.value,
+    email:email.value,
+    Pno:Pno.value,
+    password:password.value,
+    cpassword:cpassword.value
+    
+   }
+     localStorage.setItem("userData",JSON.stringify(userData))
 
+     setTimeout(()=>{
+      window.location.href="./dashboard.html"
+     },2000)
 
 //  localStorage.setItem("userData",JSON.stringify(userData))
 //  var getUser = JSON.parse(localStorage.getItem('userData'))
@@ -71,3 +77,30 @@ function addUser (){
   
 }
 
+
+function existData (){
+  var getUserData = JSON.parse(localStorage.getItem('userData'))
+  var savedData = document.getElementById('savedData')
+  savedData.innerHTML = `<table>
+  <tr>
+  <th>Name</th>
+  <th>Email</th>
+  <th>Phone no</th>
+  </tr>
+  <tr>
+      <td>${getUserData.name}</td>
+      <td>${getUserData.email}</td>
+      <td>${getUserData.Pno}</td>
+      
+  </tr>
+</table> `
+
+}
+existData()
+
+function logout(){
+ 
+    window.location.href = "./index.html"
+  
+  
+}
