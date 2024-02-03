@@ -104,3 +104,31 @@ function logout(){
   
   
 }
+
+function loginUser(){
+  var getUserData = JSON.parse(localStorage.getItem('userData'))
+  var email = document.getElementById('email')
+  var password = document.getElementById('password')
+ 
+
+  if(email.value !== getUserData.email){
+    alert('wrong email')
+  }else if(password.value !== getUserData.password){
+  alert('wrong password')
+  }
+  else{
+    Swal.fire({
+      title: "Congratulations",
+      text: "You have successfully login!",
+      icon: "success"
+    });
+    setTimeout (()=>{
+      window.location.href = './dashboard.html'
+   },3000)
+  }
+
+ if(email.value =="" && password.value ==""){
+  alert('enter your email')
+}
+  
+}
