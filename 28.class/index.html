@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .main{
+            width: 100vw;
+            height: 100vh;
+            background-color: antiquewhite;
+            display: flex;
+            
+        }
+        .item{
+            background-color: aqua;
+            width: 30%;
+            margin: 0 auto;
+        
+        }
+
+
+    </style>
+</head>
+<body>
+    
+    <div class="main">
+        <div class="item rules">what is good?
+            good language*
+            bad behaviour
+            always late</div>
+        <div class="item editing">
+            <div>
+            <h1>Generate </h1>
+            <br>
+            <textarea name="" id="userInp" cols="40" rows="20" placeholder="Enter your input"></textarea>
+        </div>
+        <button onclick="generate()">Click</button>
+        </div>
+    </div>
+
+    <script>
+        // var text ="doctor";
+// console.log(text.split("c"))
+//  (2) ['do', 'tor']
+        function generate(){
+            var userInp = document.getElementById('userInp');
+            var question = {}
+            // console.log(userInp.value.split('\n'))
+           var test = userInp.value.split('\n')
+           for(var i = 0; i< test.length; i++){
+            console.log(test[i].indexOf("?") - 1);
+           }
+        }
+
+    </script>
+
+</body>
+</html>
