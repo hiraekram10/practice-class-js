@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Blog app</title>
     <style>
         .navbar{
             background-color: purple;
@@ -23,6 +23,16 @@
             border: 2px solid grey;
             text-align: center;
         }
+        .cards{
+            display: flex;
+            flex-direction: row !important;
+            justify-content: space-around;
+        }
+        .onecard{
+            width: 200px;
+            height: 150px;
+            background-color: aqua;
+        }
     </style>
     <!-- css link -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -30,15 +40,24 @@
 <body>
     <nav class="navbar ">
         <div class="container-fluid">
-          <a class="navbar-brand">SMIT</a>
+          <a class="navbar-brand">Blog app</a>
          
             
             <button class="btn btn-outline-light" onclick="logout()">Logout</button>
         
         </div>
       </nav>
-    <h1>Welcome to Your Dashboard</h1>
+    <!-- <h1>Welcome to Your Dashboard</h1> -->
     <div id="savedData">
+
+        <!-- <div class="Products">
+            <div class="cards">
+                <div class="onecard"><img src="" alt=""></div>
+                <div class="onecard">44c</div>
+                <div class="onecard">dd</div>
+
+            </div>
+        </div> -->
        
     </div>
     

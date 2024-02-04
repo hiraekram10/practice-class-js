@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form validation</title>
+</head>
+<body>
+<!-- input validation -->
+    <div>
+        <label for="name"></label>
+        <input type="text" name="" id="name" class="targetedfeild">
+        <br>
+        <label for="email"></label>
+        <input type="email" name="" id="email" >
+        <br>
+        <button id="login">login</button>
+
+    </div>
+    <!-- dropdown selection -->
+    <select name="cities" id="cities">
+        <option value="" selected>Select an option</option>
+        <option value="ka">karachi</option>
+        <option value="la">Lahore</option>
+        <option value="pesh">peshawar</option>
+    </select>
+    <button id="optioncheck">submit</button>
+
+
+
+
+
+    <!-- script -->
+    <script>
+
+        // input validation idea
+        var login = document.getElementById('login')
+        login.addEventListener('click',()=>{
+            var targetedfeild = document.querySelector('.targetedfeild');
+            // console.log(targetedfeild.value)
+
+            if(!targetedfeild.value){
+                targetedfeild.focus();
+                targetedfeild.style.background = "red"
+                targetedfeild.value = "fill this"
+                return false
+            }
+            targetedfeild.style.background = "white"
+            
+
+            
+        })
+
+        // selection validation 
+        var optioncheck= document.getElementById('optioncheck')
+        optioncheck.addEventListener('click',()=>{
+            var cities = document.getElementById('cities')
+
+            // console.log(cities.selectedIndex);//0 means first option,1,2,3,4
+            if(cities.selectedIndex == 0){
+                alert('please select one option')
+                return false
+            }
+            alert(cities.selectedIndex)
+        })
+
+
+        //  try catch to handle errors
+        // aleert('semi') //bcz error
+
+        // console.log('hello'); //break code 
+
+//         try{
+//             aleert('semi') 
+//         }catch(err){
+//   console.log(err); //refrence error aleer is not defined
+//         }
+//         var a = 'hi'
+//     console.log(a); //a
+ 
+
+
+
+    </script>
+    
+</body>
+</html>
