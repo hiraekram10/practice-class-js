@@ -31,10 +31,10 @@
     
     <div class="main">
         <div class="item rules">
-            what is good?
-            good language*
-            bad behaviour
-            always late</div>
+what is good?
+good language*
+bad behaviour
+always late</div>
         <div class="item editing">
             <div>
             <h1>Generate </h1>
@@ -51,14 +51,25 @@
 //  (2) ['do', 'tor']
         function generate(){
             var userInp = document.getElementById('userInp');
-            var question = {}
+            var obj = {}
             // console.log(userInp.value.split('\n'))
            var test = userInp.value.split('\n')
            for(var i = 0; i< test.length; i++){
-            console.log(test[i].lastIndexOf('?')); //-1
-            // if(test[i].indexOf("?") != -1){
+            // console.log(test[i].lastIndexOf('?')); //-1
+            if(test[i].indexOf("?") !== -1){
+           obj.question = test[i]
+        //    console.log(obj);
+           if(test[i].indexOf("*") !== -1){
+            obj.answer = test[i]
+            // console.log(obj);
 
-            // }
+           }else{
+            obj["option"+ i] = test[i]
+            console.log(obj);
+           }
+            }else{
+                obj["option"+ i] = test[i]
+            }
            }
         }
 
