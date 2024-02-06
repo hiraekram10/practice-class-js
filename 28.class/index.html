@@ -49,28 +49,52 @@ always late</div>
         // var text ="doctor";
 // console.log(text.split("c"))
 //  (2) ['do', 'tor']
-        function generate(){
-            var userInp = document.getElementById('userInp');
-            var obj = {}
-            // console.log(userInp.value.split('\n'))
-           var test = userInp.value.split('\n')
-           for(var i = 0; i< test.length; i++){
-            // console.log(test[i].lastIndexOf('?')); //-1
-            if(test[i].indexOf("?") !== -1){
-           obj.question = test[i]
-        //    console.log(obj);
-           if(test[i].indexOf("*") !== -1){
-            obj.answer = test[i]
-            // console.log(obj);
 
-           }else{
-            obj["option"+ i] = test[i]
-            console.log(obj);
-           }
-            }else{
-                obj["option"+ i] = test[i]
+// start codes
+        // function generate(){
+        //     var userInp = document.getElementById('userInp');
+        //     var obj = {}
+        //     // console.log(userInp.value.split('\n'))
+        //    var test = userInp.value.split('\n')
+        //    for(var i = 0; i< test.length; i++){
+        //     // console.log(test[i].lastIndexOf('?')); //-1
+        //     if(test[i].indexOf("?") !== -1){
+        //    obj.question = test[i]
+        // //    console.log(obj);
+        //    if(test[i].indexOf("*") !== -1){
+        //     obj.answer = test[i]
+        //     // console.log(obj);
+
+        //    }else{
+        //     obj["option"+ i] = test[i]
+        //     console.log(obj);
+        //    }
+        //     }else{
+        //         obj["option"+ i] = test[i]
+        //     }
+        //    }
+        // }
+
+        function generate (){
+            var userInp = document.getElementById("userInp")
+            var test = userInp.value.split("\n");
+            var obj = {}
+            // console.log(test); //array 0123
+            for(var i = 0;i< test.length; i++){
+                // console.log(test[i].indexOf("?")); 12 (characterat) -1(3times bcz not find ?)
+                if(test[i].indexOf("?") !== -1){
+                obj.question = test[i]
+              
+              
+            }else {
+                
+                if(test[i].indexOf("*") !== -1){
+                    obj.answer = test[i].slice(0,-1)
+                }
+                obj["option" + i] = test[i].slice(0,-1)
             }
-           }
+        }
+        console.log(obj);
         }
 
     </script>
