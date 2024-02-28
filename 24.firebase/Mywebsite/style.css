@@ -2,3 +2,66 @@ h1{
     color: red;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
+
+.theme-loader{
+  height: 100px;
+  width: 100px;
+}
+.main-content{
+    display: none;
+}
+.box{
+  /* background-color: brown; */
+  display: flex;
+  justify-content: center;
+  
+
+  
+  
+}
+.form-box{
+  /* background-color: blueviolet; */
+  background: rgb(184,230,237);
+background: radial-gradient(circle, rgba(184,230,237,1) 0%, rgba(148,187,233,1) 100%);
+  width: 40%;
+  height: 80vh;
+  /* text-align: center; */
+  display: flex;
+  align-items: center;
+  box-shadow: 2px 2px 5px grey;
+  font-weight: 400;
+
+  /* justify-content: first baseline; */
+}
+.form-box h1{
+  color: rgb(255, 255, 255) !important;
+  text-align: center;
+  font-size: 3em;
+
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.form-box:hover{
+  box-shadow: 3px 3px 6px rgb(73, 73, 73);
+}
+.back{
+  background-color: rgba(148,187,233,1);
+  height: 100vh;
+}
+input{
+  border: none !important;
+  background-color: transparent !important;
+  border-bottom: 2px solid rgb(255, 255, 255) !important;
+  
+}
+button{
+  width:200px !important;
+  background-color:whitesmoke  !important;
+  border: none !important;
+  
+  
+}
+button:hover{
+  background-color: transparent !important;
+  color: aliceblue !important;
+  
+}
