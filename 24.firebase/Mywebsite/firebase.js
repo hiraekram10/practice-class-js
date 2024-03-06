@@ -8,7 +8,10 @@ import {
   createUserWithEmailAndPassword,
   onAuthStateChanged,
   signOut,
-  sendEmailVerification
+  sendEmailVerification,
+  //phone
+  RecaptchaVerifier,
+  signInWithPhoneNumber
 } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
 
 // Your web app's Firebase configuration
@@ -33,5 +36,8 @@ export {
   createUserWithEmailAndPassword,
   onAuthStateChanged,
   signOut,
-  sendEmailVerification
+  sendEmailVerification,
+  //new for phone
+  RecaptchaVerifier,
+  signInWithPhoneNumber
 }

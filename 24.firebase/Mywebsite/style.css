@@ -53,6 +53,9 @@ input{
   border-bottom: 2px solid rgb(255, 255, 255) !important;
   
 }
+.font{
+  color: white ;
+}
 button{
   width:200px !important;
   background-color:whitesmoke  !important;

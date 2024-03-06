@@ -9,6 +9,7 @@ let loader = document.getElementById('loader')
 
 
 
+
 onAuthStateChanged(auth, (user) => {
   if (user) {
     
@@ -38,7 +39,7 @@ sendEmailVerification(auth.currentUser)
   } else {
     console.log("not login");
     // window.location =  "index.html"
-    if(location.pathname !== "/index.html"){
+    if(location.pathname !== "/index.html" && location.pathname !== "/register.html"){
       window.location = 'index.html'
       console.log(location.pathname);
     }
