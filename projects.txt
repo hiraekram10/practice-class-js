@@ -29,15 +29,13 @@ git push
 
 
 justify contn between similar spaace in between no spaces at corners
-
-firebase
-google own firebase
-Firebase hosting through cli
-(npm install -g firebase-toolsnpm install -g firebase-tools)
+yfirrtoolsnpm install -g firebase-tools)
 npm install -g firebase-tools
 firebase login
 firebase init
 
+
+use terminal for hosting fb
 
 open terminal
 firsttime = firebase login
@@ -52,3 +50,14 @@ n
 n
 firebase deploy
 for updating add firebase deploy
+
+
+
+for authentication go to --> authentication enable google save it gives sdk cofig id
+
+
+for domain setting
+go to authntication
+click on settings
+click authorized domains
+add website domain (hera.com)
