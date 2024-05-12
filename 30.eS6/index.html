@@ -53,7 +53,91 @@
     // spread operator
     
     // let names = ["haya","hira"].
+
+    //scopings
+ 
+    // let instead of var
+    // pehlay function k under variable local hotay thai ub kisi bhi {} main let say local ho chahe koi bhi if else for loop
     
+    // if(true){
+    //     console.log("chlgya");
+    //     var name =' hira'
+    // }else{
+    // console.log('nhi cla');
+    // }
+    // console.log(name); //hira
+
+    // .................local vars can also use without function
+   /* 
+    if(true){
+        console.log("chlgya");
+        let abc =' hira'
+    }else{
+    console.log('nhi cla');
+    }
+     
+     console.log(abc); //refrence error abc is not defined
+
+     */
+
+    //  hoisting : var and function pehlay hi declare hojate hain (value assign nhi hoti)
+    
+
+/*
+   fruits = "mangoes"
+   var fruits ;
+   console.log(fruits);   // mangoes
+   
+   */
+
+  /* fruits = "mangoes"
+   let fruits ;
+   console.log(fruits);  // cannot excess var before initailization
+
+
+   */
+
+
+
+
+
+//   array methods :foreach forloop ki trha kam krta hai caal back functioon leta
+// forEch kuch return nhi krta iteration method
+
+// let arr = [2,1,3,4,5,]
+// arr.forEach((v,i)=>console.log(v,i))
+
+//.......................... Diffrence................................
+
+//  map: return krta kuch ek new array bna kr dega array ki lenth p return val rakhdega
+// array ki values ko use krke new array bnana
+
+/*let arr = [2,1,3,4,5,]
+ let newArr = arr.map((v,i)=>{
+    console.log(v,i)
+    return v*2
+})
+
+console.log(newArr)*/
+
+// reduce return array parameter 2 a or b  a(first time a main undefined hoga)
+
+//  a main first timme return value 2 b main 5 a = b 6 next time 6 hoga a ko hmesha return value milegi 
+let arr = [2,5,6,7,3]
+let newArr = arr.reduce((a,b)=>{
+    console.log(a)
+//   return a + b
+})
+// console.log(newArr);
+
+
+
+
+
+
+
+
+
     
 
     
