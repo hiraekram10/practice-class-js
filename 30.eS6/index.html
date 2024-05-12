@@ -1,150 +1,209 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Advance js</title>
 </head>
+
 <body>
 
 
     <script>
         //obj destructuring
-      /*  let obj = {name:"hira",roll:"employ"} 
-        let{name , roll} = obj
-        console.log(name); */
+        /*  let obj = {name:"hira",roll:"employ"} 
+          let{name , roll} = obj
+          console.log(name); */
 
 
         // nested obj destructuring
-       /* 
-        let obj = {name:"hira",roll:"employ",details:{cnic:235535,email:"hera@gmail.com"}} 
-        let{name , roll,details} = obj
-        let{cnic, email} = details
-        console.log(email); */
+        /* 
+         let obj = {name:"hira",roll:"employ",details:{cnic:235535,email:"hera@gmail.com"}} 
+         let{name , roll,details} = obj
+         let{cnic, email} = details
+         console.log(email); */
 
-     // default params
+        // default params
 
-/*
-     function objPrint(obj= "hira"){
-        console.log(obj);
-     }
-
-    */
-
-    // objdestrucuring()
-
-    /* function objPrint({email}){
-        console.log(email);
-     }
-
-
-     objPrint({name:"hira",email:"hira@gmail.com"}) */
-
-
-     // arraydetrcuturing
-
-     /*
-     let fruits = ["apple","mango","bnana"]
-
-     let[a,b,c] =fruits
-
-     console.log(c)  //bnana  */  
-
-    // spread operator
-    
-    // let names = ["haya","hira"].
-
-    //scopings
- 
-    // let instead of var
-    // pehlay function k under variable local hotay thai ub kisi bhi {} main let say local ho chahe koi bhi if else for loop
-    
-    // if(true){
-    //     console.log("chlgya");
-    //     var name =' hira'
-    // }else{
-    // console.log('nhi cla');
-    // }
-    // console.log(name); //hira
-
-    // .................local vars can also use without function
-   /* 
-    if(true){
-        console.log("chlgya");
-        let abc =' hira'
-    }else{
-    console.log('nhi cla');
-    }
-     
-     console.log(abc); //refrence error abc is not defined
-
-     */
-
-    //  hoisting : var and function pehlay hi declare hojate hain (value assign nhi hoti)
-    
-
-/*
-   fruits = "mangoes"
-   var fruits ;
-   console.log(fruits);   // mangoes
-   
-   */
-
-  /* fruits = "mangoes"
-   let fruits ;
-   console.log(fruits);  // cannot excess var before initailization
-
-
-   */
-
-
-
-
-
-//   array methods :foreach forloop ki trha kam krta hai caal back functioon leta
-// forEch kuch return nhi krta iteration method
-
-// let arr = [2,1,3,4,5,]
-// arr.forEach((v,i)=>console.log(v,i))
-
-//.......................... Diffrence................................
-
-//  map: return krta kuch ek new array bna kr dega array ki lenth p return val rakhdega
-// array ki values ko use krke new array bnana
-
-/*let arr = [2,1,3,4,5,]
- let newArr = arr.map((v,i)=>{
-    console.log(v,i)
-    return v*2
-})
-
-console.log(newArr)*/
-
-// reduce return array parameter 2 a or b  a(first time a main undefined hoga)
-
-//  a main first timme return value 2 b main 5 a = b 6 next time 6 hoga a ko hmesha return value milegi 
-let arr = [2,5,6,7,3]
-let newArr = arr.reduce((a,b)=>{
-    console.log(a)
-//   return a + b
-})
-// console.log(newArr);
-
-
-
-
-
-
-
-
-
-    
-
-    
-
+        /*
+             function objPrint(obj= "hira"){
+                console.log(obj);
+             }
         
+            */
+
+        // objdestrucuring()
+
+        /* function objPrint({email}){
+            console.log(email);
+         }
+    
+    
+         objPrint({name:"hira",email:"hira@gmail.com"}) */
+
+
+        // arraydetrcuturing
+
+        /*
+        let fruits = ["apple","mango","bnana"]
+   
+        let[a,b,c] =fruits
+   
+        console.log(c)  //bnana  */
+
+        // spread operator
+
+        // let names = ["haya","hira"].
+
+        //scopings
+
+        // let instead of var
+        // pehlay function k under variable local hotay thai ub kisi bhi {} main let say local ho chahe koi bhi if else for loop
+
+        // if(true){
+        //     console.log("chlgya");
+        //     var name =' hira'
+        // }else{
+        // console.log('nhi cla');
+        // }
+        // console.log(name); //hira
+
+        // .................local vars can also use without function
+        /* 
+         if(true){
+             console.log("chlgya");
+             let abc =' hira'
+         }else{
+         console.log('nhi cla');
+         }
+          
+          console.log(abc); //refrence error abc is not defined
+     
+          */
+
+        //  hoisting : var and function pehlay hi declare hojate hain (value assign nhi hoti)
+
+
+        /*
+           fruits = "mangoes"
+           var fruits ;
+           console.log(fruits);   // mangoes
+           
+           */
+
+        /* fruits = "mangoes"
+         let fruits ;
+         console.log(fruits);  // cannot excess var before initailization
+      
+      
+         */
+
+
+
+
+
+        //   array methods :foreach forloop ki trha kam krta hai caal back functioon leta
+        // forEch kuch return nhi krta iteration method
+
+        // let arr = [2,1,3,4,5,]
+        // arr.forEach((v,i)=>console.log(v,i))
+
+        //.......................... Diffrence................................
+
+        //  map: return krta kuch ek new array bna kr dega array ki lenth p return val rakhdega
+        // array ki values ko use krke new array bnana
+
+        /*let arr = [2,1,3,4,5,]
+         let newArr = arr.map((v,i)=>{
+            console.log(v,i)
+            return v*2
+        })
+        
+        console.log(newArr)*/
+
+        // reduce return array parameter 2 a or b  a(first time a main undefined hoga)
+
+        //  a main first timme return value 2 b main 5 a = b 6 next time 6 hoga a ko hmesha return value milegi 
+        // let arr = [2,5,6,7,3]
+        // let newArr = arr.reduce((a,b)=>{
+
+
+
+        //   return a + b
+        // })
+        // // console.log(newArr);
+
+
+
+        let arr = [{ num: 2 }, { num: 5 }, { num: 6 }, { num: 7 }, { num: 3 }]
+        let newArr = arr.reduce((a, b) => {
+
+            let check = { num: a.num + b.num }
+            console.log('check', check); //{num: 7},{num: 13},{num: 20}
+            return check
+        })
+        console.log(newArr);
+
+
+        // arr.filter array lega array bna kr dega ye true or false lea hai true lega tou return fgalse hoga tou ghyb
+
+
+        // let num1 = [
+        //     { num: 2 }, { num: 6 }, { num: 9 }
+        // ]
+
+        // let numCheck = num1.filter((v, i) => {
+        //     // console.log(v.num > 5); false ,true ,true
+        //     return v.num < 5
+
+        // })
+
+        // console.log(numCheck);
+
+        //practice
+
+        let students = [
+            {
+                name:'haya',
+                grade:"A"
+            },
+            {
+                name:'hira',
+                grade:"A+"
+            },
+            {
+                name:'zara',
+                grade:"B"
+            },
+            {
+                name:'bisma',
+                grade:"A+"
+            },
+        ]
+
+        let gradeCheck = students.filter((v,i)=>{
+        //    console.log(v.grade);
+          return v.grade === "A+"
+        })
+        console.log(gradeCheck);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     </script>
-    
+
 </body>
+
 </html>
