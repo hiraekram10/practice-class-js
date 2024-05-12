@@ -56,6 +56,35 @@ abc(xyz)
 
 
 // .......... High order function in js..........................
+// ek function jo return krraha hai dosra function nested function
+
+  function hFunc (a){
+    return function(b){
+        return function(c){
+            return a * b * c
+
+        }
+    }
+  }
+
+
+ console.log( hFunc (3)(3)(3))
+
+// FUNCTION APNE UNDER CALL KRTA KHUD KO BA BAR
+//real time chat app khud mssg ata bar bar khud
+//hm websocket waghera nhi lgate polyene chat ko get krne ka function usko bar bar call krte rehte hain
+ var count = 0
+ function recurFunc (){
+    count++
+    console.log(count);
+    if(count <10){
+        recurFunc()
+    }
+ }
+
+ recurFunc()
+
+
 
 
 
