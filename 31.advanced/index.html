@@ -57,33 +57,45 @@ abc(xyz)
 
 // .......... High order function in js..........................
 // ek function jo return krraha hai dosra function nested function
+// a function that accepts and /or returns another function is called higher order function
 
-  function hFunc (a){
-    return function(b){
-        return function(c){
-            return a * b * c
+//   function hFunc (a){
+//     return function(b){
+//         return function(c){
+//             return a * b * c
 
-        }
-    }
-  }
+//         }
+//     }
+//   }
 
 
- console.log( hFunc (3)(3)(3))
+//  console.log( hFunc (3)(3)(3))
 
 // FUNCTION APNE UNDER CALL KRTA KHUD KO BA BAR
 //real time chat app khud mssg ata bar bar khudrefresh hojata hai 2 to three second calling
 //hm websocket waghera nhi lgate polyene chat ko get krne ka function usko bar bar call krte rehte hain
- var count = 0
- function recurFunc (){
-    count++
-    console.log(count);
-    if(count <10){
-        recurFunc()
-    }
- }
 
- recurFunc()
+//  var count = 0
+//  function recurFunc (){
+//     count++
+//     console.log(count);
+//     if(count <10){
+//         recurFunc()
+//     }
+//  }
 
+//  recurFunc()
+
+
+
+// .......................Iterators ............ pagination using(iterator function) 
+
+/*Iterator: Tumhara iterator ek staff member hai jo tumhe har stop pe inform karta hai,
+ jaise train har stop pe rukti hai. Tum next stop pe pahuchte ho, wo tumhe batata hai ke yeh stop aa gaya,
+ aur aise hi sequentially tumhe har stop ke baare mein batata rehta hai  */
+
+
+var name = ["rida","haya","haya"]
 
 
 
