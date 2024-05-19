@@ -90,12 +90,60 @@ abc(xyz)
 
 // .......................Iterators ............ pagination using(iterator function) 
 
-/*Iterator: Tumhara iterator ek staff member hai jo tumhe har stop pe inform karta hai,
+/*
+Socho ke tum ek train station pe ho aur tumhare paas ticket hai jisme train ke har stop ke baare mein information hai.
+
+
+
+Iterator: Tumhara iterator ek staff member hai jo tumhe har stop pe inform karta hai,
  jaise train har stop pe rukti hai. Tum next stop pe pahuchte ho, wo tumhe batata hai ke yeh stop aa gaya,
  aur aise hi sequentially tumhe har stop ke baare mein batata rehta hai  */
 
 
-var name = ["rida","haya","haya"]
+ /*Generator: Tumhara generator ek automated announcement system hai jo har stop pe announcement karta hai. 
+ Jaise hi train ek stop pe pahuchti hai, announcement system announce karta hai "Next stop is XYZ", 
+ aur jab agla stop aata hai, phir announce karta hai. 
+ Ye system ek time par ek stop ke baare mein announce karta hai jab tak ke saare stops khatam na ho jayein. */
+
+
+// var name = ["rida","haya","haya"]
+
+
+
+// ...................Promise (library).................
+//  jesay setTimout main 3 4 sec bad chlta ismn time define ki need nhi hai 
+//  promise main jo bhi async kam krne klie use hota
+ /*
+ 
+Promise Roman Urdu mein:
+Promises JavaScript mein ek aisa mechanism hai jo asynchronous operations ko handle karne ke liye use hota hai.
+ Yeh future mein kisi value ke hone ka waada (promise) karta hai. Promises ko teen states mein represent kiya ja sakta 
+ hai: pending (chalu), fulfilled (pura hua), ya rejected (nakam).  */
+
+
+
+ //constructor function call back leta
+ //resolve call fullfiled 
+ //reject promise toto gya
+//  pending na resolve na reject
+//api callfetch ki setTimeoutnhi lgaskteagr late aya tou
+// pori js main kahin bhi get krskte hain
+ let getValue = new Promise((resolve, reject) => {
+
+    setTimeout(()=>{
+        // resolve("data agya") // res data agya
+        reject("data nhi aya") //error
+    },3000)
+ })
+ .then((res)=>console.log("res ",res))
+ .catch((error)=>console.log('error',error))
+
+// console.log(getValue);  //Promise {<pending>}
+    // PROMISE say ek method milta .then call back leta response lakr detA
+    //PROMISE say ek or catch milta .catch main error milta jo hm khud bnatay agr logic kharab 
+    //dono sath ayengay
+
+
 
 
 
