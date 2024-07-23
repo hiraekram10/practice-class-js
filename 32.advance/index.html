@@ -14,7 +14,8 @@
     // .......................................API ..................................
 
     // application programming interface
-    // fontend or database k bech middleware api 
+    // fontend(client5) or database k bech middleware api (frontend not directly accessible to datatbase)
+    // Good database have api
     // manager k assistance k through bat karengay direct discuss nhi karengay
     // server , serverless
     //api is nothing but ip address
@@ -27,6 +28,27 @@
     // .....................................................fetch method ...................
     // fetch ko promise k ander likha yeh khud bhi ek promise hai jo backend nay diya hai
     // data server say aya hai isse json main convert krna hota hai for understabdale code
+    // fetch return krta hai .then
+
+    // fetch('https://fakestoreapi.com/products')
+    // .then(res => res.json())
+    // .then((res)=>{
+    //     console.log(res)
+    // })
+    // .catch(err=>console.log(err))
+
+    var gettingVal = new Promise((resolve,reject) =>{
+        fetch('https://fakestoreapi.com/products')
+        .then(res=> res.json())
+        .then(res=>resolve(res))
+        .catch(err=>reject(err))
+    })
+
+    gettingVal
+    .then(res=>console.log(res))
+    .catch(err=>console.log(err))
+    console.log('hi');
+    
     </script>
 </body>
 </html>
