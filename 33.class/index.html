@@ -1,11 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
+    <!-- ___________________________________Promise__________________
+
+    The promise object represent (task abhi complete nhi hoga)
+    operations
+    file acesses not directly (time taken)
+    password hashing(time taken)
+    Promise has three state
+    zyada tar promises consume hote (fetch)
+    promise making
     
+
+      -->
+    <!-- Data get  data chahiyeh api say -->
+    <!-- Data post   data api Ko send horaha-->
+    <!-- EDIT data and sent to api -->
+    <!-- delete -->
+    <!-- ( crud) operation through fetch
+             browser say get ki reques jati hai server ko jb hm browser p link ,likhte
+             Rest API
+
+             ____________________________Rest API__________________
+             The REST API is part of the integration framework and handles requests from 
+             external consumers.
+             
+             
+             -->
+
+
+             <!-- _________________________Async Await_____________________
+              js 2 types (sync and async)   ( Default)
+              js is sync code (means ek code excute hoga then another "thi hai or hmesha rahegi")
+              single threaded(slow as compared to other languages but always have engine run time enviroment)
+
+
+              Executuion context
+              console.log() first
+              console.log()   secondly   
+              jb first compelete hoga then 2nd chalega
+
+
+              ___________Blicking code________________ vs__________________ Non blocking code
+
+                block the program code                           Donot block executuion
+
+                Read Files sync                                  Read file async
+                (time taken code agay run nhikrega)             (data base ek file haijismn say data )
+                                                                 araha but kiya user sucessfully register na ho or usko 
+                                                                 notify krdo its good? no(usecases)
+             -->
+    <script>
+
+    //   PROMISES is a object(instance chahiyeh tou new keyword chahiyeh... new promise milta hai es6 k bad proper)
+    // (queue and blue bird) promise say pehlay ki library .then,catch,bind
+    // ek call back LetA
+
+
+
+    // _______________create
+    var prom = new Promise(function(resolve,reject){
+        // assync task
+        // db call , network call
+        // setTimeout
+        setTimeout(function(){
+console.log("done");
+resolve()
+        },3000)
+
+    })
+    // _______________ consume
+    // .then directly connected to resolve for connect them call resolve
+
+prom.then(function(res){
+    console.log("promise done");
+})
+        
+
+
+
+        // best option to make promise in function
+
+       /* var getVal = () => {
+            return new Promise((resolve, reject) => {
+                fetch('https://fakestoreapi.com/products')
+                    .then(res => res.json())
+                    .then(res => reject('error aya hai'))
+                    .catch(err => reject(err))
+            })
+        }
+        // getVal()
+
+        // .then(res=>console.log(res))
+        // .catch(error=>console.log(error))
+        // global function 
+
+        // async code in function
+        // ___________________________way how to resolve promise in es6_____________________________-
+
+        let setData = async ()=>{
+            try{
+                const res = await getVal()
+            
+            console.log(res);
+            }catch(err){
+                console.log(err);
+            }
+          
+        }
+        setData()
+*/      
+
+
+      
+
+
+
+
+   
+       
+
+
+
+    </script>
 </body>
+
 </html>
